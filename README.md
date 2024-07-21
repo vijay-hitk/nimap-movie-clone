@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+Access the live project using the link https://669cafca94137721a5f1e0c1--genuine-licorice-e4829b.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
