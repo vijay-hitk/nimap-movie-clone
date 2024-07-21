@@ -1,0 +1,93 @@
+.movie__list {
+    padding: 0 3rem 3rem 3rem;
+}
+
+.list__title {
+font-size: 1.75rem;
+margin:  2.5rem;
+}
+
+.list__cards {
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.prevBtn , .nextBtn{
+    height:40px;
+    width: 60px;
+    outline: none;
+    font-weight: 600;
+    border-radius: 1rem;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(17, 125, 226);
+        color: aliceblue;
+        transform: scale(0.9);
+    }
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    gap : 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 1rem;
+}
+
+form{
+    display: flex;
+    flex-direction:row;
+    gap:2rem;
+    
+}
+input ,button{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(196, 230, 230);
+    color: rgb(11, 11, 11);
+    font-weight:600;
+
+}
+button:hover{
+    background-color: rgb(226, 69, 95);
+    transform: scale(1.2);
+    color: white;
+    cursor: pointer;
+}
+
+input:focus{
+    background-color: aliceblue;
+    transform: scale(1.1);
+}
+
+@media (max-width:600px){
+    form{
+        flex-direction: column;
+        align-items: center;
+
+        
+    }
+    .search{
+        flex-direction: column;
+        
+       
+    
+    }
+    button{
+        width:5rem;
+        padding-left: 1rem;
+        
+    }
+
+}
+
