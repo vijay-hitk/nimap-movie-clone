@@ -26,11 +26,12 @@ a:hover {
     color: red;
 }
 
-/* .header__icon {
-    width: 80px;
-    cursor: pointer;
-} */
+
 
 .user__avatar {
     font-size: 2rem;
+}
+
+@media (max-width:1200px){
+    
 }

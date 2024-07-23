@@ -39,6 +39,7 @@ const MovieList = () => {
                         setTotalPage(data.total_pages)
                         // console.log(totalPage);
         })
+        .catch(error => console.log(error))
     }
 
     useEffect(() => {
@@ -47,7 +48,8 @@ const MovieList = () => {
     const searchMovie = () => {
         fetch(`https://api.themoviedb.org/3/search/movie?api_key=c45a857c193f6302f2b5061c3b85e743&language=en-US&query=${search}&page=${currentPage}`)
         .then(res => res.json())
-        .then(data => setSearchResult(data.results));
+        .then(data => setSearchResult(data.results))
+        .catch(error => console.log(error))
     }
     searchMovie();
 },[search])

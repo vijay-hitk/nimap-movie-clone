@@ -1,20 +1,27 @@
+body{
+    overflow-x: hidden;
+}
+
 .movie {
     width: 100%;
     position: relative;
     display: flex;
     flex-direction:column;
     align-items: center;
+    /* overflow-x: hidden; */
 }
 
 .movie__intro {
-    width: 80%;
+    width: 90%;
 }
 
 .movie__backdrop {
-    width: 100%;
-    height: 500px;
+    max-width: 100%;
+    height: auto;
     object-fit:cover;
+    margin-right: 3rem;
     object-position: 0 35%;
+    
 }
 
 .movie__detail {
@@ -148,7 +155,13 @@
 .cast{
     display: flex;
     flex-wrap: wrap;
-    margin-left:5rem;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    position: relative;
+    bottom:10rem;
+
+
 }
 .cast_card{
     display: flex;
@@ -157,7 +170,85 @@
     margin:2rem;
    
 }
-.cast_title{
-    font-weight: bold;
+.cast_title > p{
+    color: azure;
+    position: relative;
+    bottom : 10rem;
+    width:auto;
+      
+
+    
 
 }
+
+
+
+@media (max-width:850px){
+   
+    .movie__backdrop{
+        max-width:900px;
+        height:auto;
+
+    }
+    .cast{
+       
+        margin:auto ;
+        padding: 5rem;
+    }
+    .movie{
+        display: flex;
+        margin-left: 10rem;
+        justify-content: center;
+        align-items:center;
+        width:800px;
+        /* margin: auto; */
+        
+       
+    }
+    .movie > .cast_title {
+        text-align: center;
+        margin: auto;
+        
+    }
+    
+
+}
+
+@media (max-width:300px){
+   
+
+    .movie__intro{
+        width:100%;
+    
+    }
+    .movie_intro > img{
+        margin-left: 100px;
+    }
+   
+}
+
+@media  (max-width:250px){
+    .movie , .movie__detail{
+        display: flex;
+        flex-direction: column;
+        gap:5rem;
+        width:225px;
+
+       }
+       .movie__detail{
+        margin-left: 30rem;
+       }
+       .cast_title > p{
+        margin-left:20rem;
+       }
+       .cast{
+        margin-left:10rem;
+       }
+
+
+
+
+    
+}
+
+
