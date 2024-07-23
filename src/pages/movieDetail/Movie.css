@@ -184,30 +184,47 @@ body{
 
 
 @media (max-width:850px){
+    .movie__detailRightBottom div{
+        max-height: 10rem;
+    }
    
     .movie__backdrop{
         max-width:900px;
         height:auto;
 
     }
+    .movie__detailRight{
+        min-width:100px;
+       
+    }
+    .movie__tagline{
+        display: flex;
+        flex-direction: column;
+    }
     .cast{
+        position: relative;
+        top:10rem;
        
         margin:auto ;
         padding: 5rem;
     }
-    .movie{
+    .movie,.movie__detail{
         display: flex;
-        margin-left: 10rem;
+        flex-direction: column;
+       
         justify-content: center;
         align-items:center;
-        width:800px;
-        /* margin: auto; */
+      
+       
         
        
     }
+
     .movie > .cast_title {
         text-align: center;
         margin: auto;
+        position: relative;
+        top:20rem;
         
     }
     
